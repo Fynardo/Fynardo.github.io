@@ -1,7 +1,7 @@
 # Welcome to Jekyll!
 #
 # Site settings
-title: La imprenta de Fynardo
+name: La imprenta de Fynardo
 email: dfynar@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Jugando con Python, Arduinos y R. Powered by Jekyll.
