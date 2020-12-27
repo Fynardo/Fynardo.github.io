@@ -7,7 +7,7 @@ tags: task-timer, timer, prescaler
 ---
 
 
-En mi día a día me suele costar bastante controlar cuánto tiempo he dedicado a una tarea en concreto, cuánto tiempo llevo sin tomar un pequeño descanso, o en cuántas tareas distintas he trabajado en una jornada. Más que complicado, llevar cuenta de este tipo de cosas suele ser aburrido y pesado. ¿Solución? ¡Que lo haga otro! Es una tarea repetitiva perfecta para una máquina. Los requisitos que me he planteado para ello son los siguientes:
+En mi día a día me suele costar bastante controlar cuánto tiempo he dedicado a una tarea en concreto, cuánto tiempo llevo sin tomar un pequeño descanso, o en cuántas tareas distintas he trabajado en una jornada.<!-- excerpt-end --> Más que complicado, llevar cuenta de este tipo de cosas suele ser aburrido y pesado. ¿Solución? ¡Que lo haga otro! Es una tarea repetitiva perfecta para una máquina. Los requisitos que me he planteado para ello son los siguientes:
 
 * *Visual*, un simple vistazo debería ser suficiente.
 * Poco intrusivo, tiene que permitirme seguir trabajando como si no existiese.

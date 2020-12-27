@@ -6,7 +6,8 @@ category: embed
 tags: task-timer
 ---
 
-Tras probar el sistema durante unos días en *entorno real*, esto es, en algunas tareas diarias, he visto deficiencias en el planteamiento de varios casos de uso, lo cual me ha llevado a rediseñar alguno de ellos y a mejorar otros. Tras ello, presento la versión v0.2 de **Arduino Task-Timer** con los cambios comentados a continuación.
+Tras probar el sistema durante unos días en *entorno real*, esto es, en algunas tareas diarias, he visto deficiencias en el planteamiento de varios casos de uso, lo cual me ha llevado a rediseñar alguno de ellos y a mejorar otros. Tras ello, presento la versión v0.2 de <span class="bold">Arduino Task-Timer</span> <!-- excerpt-end -->con los cambios comentados a continuación.
+
 
 ### Log de cambios
 

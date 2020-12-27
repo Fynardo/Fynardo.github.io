@@ -24,7 +24,8 @@ defaults:
         values:
             layout: "category"
 
-# show_excerpts: true
+show_excerpts: true
+excerpt_separator: <!-- excerpt-end -->
 date_format: "%b %-d, %Y"
 
 # Build settings

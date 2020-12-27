@@ -17,10 +17,11 @@ layout: default
       <li>
         <h3> <a href="{{ post.url | relative_url }}"> {{ post.title | escape }} </a> </h3>
         {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
+        <span style="font-style:italic">{{ post.excerpt }}</span>
+        <a href="{{post.url | relative_url }}">leer más</a>
         {%- endif -%}
-        <span class="post-meta"> en <a href="{{site.url}}/category/{{ post.category }}/">/{{post.category}}/</a> - {{
-            post.date | date: site.date_format }}</span>
+        <p class="post-meta"> -> en <a href="{{site.url}}/category/{{ post.category }}/">/{{post.category}}/</a> - {{
+            post.date | date: site.date_format }}</p>
       </li>
       {%- endfor -%}
     </ul>
