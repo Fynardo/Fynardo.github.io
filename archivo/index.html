@@ -9,7 +9,7 @@ title: Archivo
     <h3> Entradas en <small>#{{ category | first }}</small> </h3>
         <ul>
         {% for post in category.last %}
-            <li> {{ post.date | date: '%Y-%m' }} - <a href="{{ post.url}}">{{ post.title}}</a> </li>
+            <li> {{ post.date | date: '%Y-%m-%-d' }} - <a href="{{ post.url}}">{{ post.title}}</a> </li>
         {% endfor %}
         </ul>
     {% endfor %}

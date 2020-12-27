@@ -25,6 +25,7 @@ defaults:
             layout: "category"
 
 # show_excerpts: true
+date_format: "%b %-d, %Y"
 
 # Build settings
 markdown: kramdown

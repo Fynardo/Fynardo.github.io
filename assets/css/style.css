@@ -28,6 +28,11 @@ a:hover {
     font-size: small;
 }
 
+.post-share-logo {
+    vertical-align:middle;
+}
+
+
 .bold {
     font-weight: bold;
 }
