@@ -2,7 +2,7 @@
 layout: post
 title: Arduino Task Timer
 date: 2017-08-13
-categories: arduino
+category: embed
 tags: task-timer, timer, prescaler
 ---
 

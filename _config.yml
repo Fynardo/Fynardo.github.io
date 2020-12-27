@@ -11,6 +11,20 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: Fynardo
 github_username:  Fynardo
 
+# Category pages
+collections:
+    category:
+        output: true
+
+defaults:
+    -
+        scope:
+            path: ""
+            type: category
+        values:
+            layout: "category"
+
+# show_excerpts: true
 
 # Build settings
 markdown: kramdown

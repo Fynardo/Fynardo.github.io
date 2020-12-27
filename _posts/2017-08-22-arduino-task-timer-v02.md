@@ -2,7 +2,7 @@
 layout: post
 title: Arduino Task Timer v0.2
 date: 2017-08-22
-categories: arduino
+category: embed
 tags: task-timer
 ---
 
