@@ -23,7 +23,9 @@
 <body>
     {% include header.html %}
 
-    {{ content }}
+    <div id="content">
+        {{ content }}
+    </div>
 <hr>
 
 <p><small> <i> &copy; {{ site.time | date: '%Y' }}. La imprenta de Fynardo. <span class="bold">Contacto:</span> dfynar(at)gmail(dot)com </small></p>

@@ -22,7 +22,7 @@ Básicamente, el sistema recibe el nombre de una tarea, cuenta el tiempo que se 
 # Diagrama de conexión hardware
 El cableado es bastante directo ya que no hay ningún componente muy particular, simplemente acordarse de colocar resistencias en los LED, asegurarse de trabajar con la lógica correcta del pulsador y conectar de forma ordenada los pines de la pantalla LCD al Arduino para que funcione correctamente.
 
-![Diagrama de conexión]({{ site.url }}/assets/2017-13-08/diagrama.png)
+<img src="{{ site.url }}/assets/2017-13-08/diagrama.png" class="post-content-image"/> 
 
 # Un vistazo al código
 Por supuesto, el código está disponible en [github](https://github.com/Fynardo/task-timer). No se trata de un código complejo, de hecho, es probable que lo más engorroso sea trabajar con la pantalla LCD, pero la librería **LiquidCrystal** simplifica mucho el trabajo. El otro componente principal del sistema, además de la pantalla, es la gestión del tiempo. Lo más común es trabajar con las interrupciones de tiempo a través de funciones ya implementadas como *millis* o *delay*, pero cuando se necesita un control más fino es necesario trabajar directamente con los registros. 
