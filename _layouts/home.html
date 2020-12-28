@@ -17,8 +17,9 @@ layout: default
       <li>
         <h3> <a href="{{ post.url | relative_url }}"> {{ post.title | escape }} </a> </h3>
         {%- if site.show_excerpts -%}
-        <span style="font-style:italic">{{ post.excerpt }}</span>
-        <a href="{{post.url | relative_url }}">leer más</a>
+        <div class="excerpt">
+            {{post.excerpt}}<a href="{{post.url | relative_url }}">...leer más &raquo;</a>
+        </div>
         {%- endif -%}
         <p class="post-meta"> -> en <a href="{{site.url}}/category/{{ post.category }}/">/{{post.category}}/</a> - {{
             post.date | date: site.date_format }}</p>
