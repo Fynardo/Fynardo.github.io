@@ -36,13 +36,17 @@ a:hover {
     display: inline;
 }
 
-
 .post-content-image {
-    width: 50vw;
+    width: 80%;
     display: block;
     margin: 0 auto;
 }
 
+@media (min-width: 1280px) {
+    .post-content-image {
+        width: 40%;
+    }
+}
 
 .post-meta {
     font-style: italic;
