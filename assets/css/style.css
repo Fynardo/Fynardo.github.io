@@ -62,6 +62,10 @@ a:hover {
     font-weight: bold;
 }
 
+.italic {
+    font-style: italic;
+}
+
 .tech {
     font-weight: bold;
     font-style: italic;
@@ -75,24 +79,33 @@ a:hover {
     text-decoration-thickness: 2px;
 }
 
-.underscore_infra {
+.underscore_or {
     text-decoration: underline;
     -webkit-text-decoration-color: orange; /* Safari */
     text-decoration-color: orange;
     text-decoration-thickness: 2px;
-
 }
 
-.underscore_embed {
+.underscore_data {
     text-decoration: underline;
     -webkit-text-decoration-color: green; /* Safari */
     text-decoration-color: green;
     text-decoration-thickness: 2px;
 }
 
-.underscore_data {
+.underscore_infra {
     text-decoration: underline;
     -webkit-text-decoration-color: blue; /* Safari */
     text-decoration-color: blue;
     text-decoration-thickness: 2px;
+
 }
+
+.underscore_embed {
+    text-decoration: underline;
+    -webkit-text-decoration-color: purple; /* Safari */
+    text-decoration-color: purple;
+    text-decoration-thickness: 2px;
+}
+
+
