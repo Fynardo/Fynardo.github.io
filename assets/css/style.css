@@ -48,6 +48,25 @@ a:hover {
     }
 }
 
+.post-code-chunk {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #4464AD;
+}
+
+.post-table {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.post-table td, .post-table th {
+    border: 1px solid black;
+}
+
+.post-table th {
+    padding: 5px;
+}
+
 .post-meta {
     font-style: italic;
     font-size: small;

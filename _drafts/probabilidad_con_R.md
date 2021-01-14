@@ -6,47 +6,69 @@ tags: estadistica, probabilidad, R
 ---
 
 En esta entrada vamos a estudiar el funcionamiento desde el punto de vista probabilístico de uno de los juegos de azar más populares: <strong>La ruleta</strong>. Además, implementaremos nuestra propia ruleta en R, que nos permitirá realizar simulaciones y experimentos.
-
 <!-- excerpt-end -->
+
+
 ### Contenido
+{: .no_toc}
 
+1. TOC
+{:toc}
 
-1. [Introducción](#introducción)
-2. [Tipos de ruleta](#tipos-de-ruleta)
-3. [La ruleta europea en R](#la-ruleta-europea-en-r)
-4. [Cálculo de probabilidades teóricas](#cálculo-de-probabilidades-teóricas)
-5. [Simulación](#simulación)
-6. [Simulación vs Teoría](#simulación-vs-teoría)
-7. [¿Qué ocurre en otras ruletas?](#qué-ocurre-en-otras-ruletas)
-8. [Conclusión](#conclusión)
-9. [Referencias](#referencias)
 
 ### Introducción
-Todo el código está disponible en el [repositorio]({{ site.url }}/assets/2020-12-28/ruleta.R)
+Todo el código está disponible en el [repositorio]({{ site.url }}/assets/ruleta-draft/ruleta.R)
+
 ### Tipos de ruleta
-### La ruleta europea en R
+<!-- TODO Foto de una ruleta (de la wikipedia supongo) -->
+<!-- TODO Diferencias entre americana / europea (0 vs 00) -->
+
+
+
 ### Cálculo de probabilidades teóricas
 
-hola patata frita, [[1]](#referencias)
+Podemos calcular las probabilidades de acertar la tirada utilizando la regla de LaPlace [[1]](#ref-laplace)
+<!-- Tabla de LaPlace para todas las apuestas -->
+
+|Tipo de Apuesta | Favorables | Posibles | Prob. de ganar|
+|:--------------:|:----------:|:--------:|:-------------:|
+|Color           | 18         | 37       | 48,65%        |
+|Par/Impar       | 18         | 37       | 48,65%        |
+| ...     | ...         | ...       | ...        |
+{: .post-table}
+
+
+<!-- Tabla de esperanza matemática -->
+
+
+
+
+### La ruleta europea en R
+
+```R
+# Definición de la ruleta. 18 números rojos, 18 números negros y 1 número verde (0).
+ruleta = c('V', rep(c('R','N'),18))
+```
+{: .post-code-chunk}
+
 
 ### Simulación
 
-<div class="post-content-image">
-    <img src="{{ site.url }}/assets/ruleta-draft/tiradas.png"/> 
-</div>
+<figure>
+  <img src="{{site.url}}/assets/ruleta-draft/tiradas.png"/>
+  <figcaption>Figura 1: Resultados tras 5000 tiradas a color.</figcaption>
+</figure>
+{: .post-content-image #fig-1}
+
 
 ### Simulación vs Teoría
 ### ¿Qué ocurre en otras ruletas?
 ### Conclusión
 ### Referencias
 
-[1] Esperanza Matemática, [Wikipedia](https://es.wikipedia.org/wiki/Esperanza_matem%C3%A1tica).
+[1] Regla de LaPlace, [Wikipedia](https://es.wikipedia.org/wiki/Regla_de_sucesi%C3%B3n).
+{: #ref-laplace}
+[2] Esperanza Matemática, [Wikipedia](https://es.wikipedia.org/wiki/Esperanza_matem%C3%A1tica).
+{: #ref-esperanza}
 
-
-```python
-def print_hello:
-    print('Hello, Jekyll!')
-
-print_hello()
-```
 

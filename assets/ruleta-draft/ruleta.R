@@ -29,7 +29,9 @@ tirar = function(n=1){
 tiradas = tirar(5000)
 table(tiradas)
 
-barplot(table(tiradas), color=c('black','red','green')
+### Figura
+dev.new()
+barplot(table(tiradas), col=c('black','red','green'), main="Conteo de colores en 5000 tiradas a color.")
 
 apostar = function(n=1, c='R', prison=F){
     # Realiza un número 'n' de apuestas a un color. La prision controla el efecto que tiene el verde sobre el resultado de la apuesta.
@@ -43,10 +45,11 @@ apostar = function(n=1, c='R', prison=F){
     return(aciertos - fallos)
 }
 
-#apuestas = apostar(100)
+#resultado = apostar(100)
 tandas = replicate(2500, apostar(100))
 
-plot(tandas[1:250], col=ifelse(tandas < 0, 'red', 'green'), pch=16)
+dev.new()
+plot(tandas[1:250], col=ifelse(tandas < 0, 'red', 'green'), pch=16, main="Apuestas ganadoras vs perdedoras", xlab="Apuesta", ylab="Resultado")
 grid()
 abline(h=0)
 
