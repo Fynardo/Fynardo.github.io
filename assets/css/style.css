@@ -28,8 +28,19 @@ a:hover {
     text-decoration:underline;
 }
 
+.post-list {
+    list-style-type: none;
+}
+
+.post-list-title {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
 .excerpt {
     font-style: italic;
+    padding-top: 10px;
+    padding-bottom: 25px;
 }
 
 .excerpt p{

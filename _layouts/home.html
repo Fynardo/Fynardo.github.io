@@ -15,14 +15,14 @@ layout: default
     <ul class="post-list">
       {%- for post in site.posts limit:5 -%}
       <li>
-        <h3> <a href="{{ post.url | relative_url }}"> {{ post.title }} </a> </h3>
+        <h3 class="post-list-title"> <a href="{{ post.url | relative_url }}"> {{ post.title }} </a> </h3>
+        <span class="post-meta"> -> en <a href="{{site.url}}/category/{{ post.category }}/">/{{post.category}}/</a> -
+            {{ post.date | date: site.date_format }} ({{post.readtime}} min.)</span>
         {%- if site.show_excerpts -%}
         <div class="excerpt">
             {{post.excerpt}}<a href="{{post.url | relative_url }}">...leer más &raquo;</a>
         </div>
         {%- endif -%}
-        <p class="post-meta"> -> en <a href="{{site.url}}/category/{{ post.category }}/">/{{post.category}}/</a> - {{
-            post.date | date: site.date_format }}</p>
       </li>
       {%- endfor -%}
     </ul>

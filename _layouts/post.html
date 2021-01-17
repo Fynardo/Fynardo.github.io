@@ -2,11 +2,21 @@
 layout: default
 ---
 
-<h2>{{ page.title }}</h2>
+<h2 style="margin-bottom:0; padding-bottom:0;">{{ page.title }}</h2>
 
+
+<span class="post-meta"> -> en <a href="{{site.url}}/category/{{ page.category }}/">/{{page.category}}/</a> - {{
+    page.date| date: site.date_format }} ({{page.readtime}} min.). <span class="bold"> Comparte: </span>
+    <a href="https://twitter.com/intent/tweet?text={{page.title}} via fynardo.dev" target="_blank">
+        <img class="post-share-logo" src="{{site.url}}/assets/img/twitter_logo_blue.png" width="32" height="32"></img>
+    </a>
+
+    <!-- linkedin: https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Ffynardo.github.io/ -->
+</span>
 
 
 {{ content }}
+
 
 <span class="post-meta"> -> en <a href="{{site.url}}/category/{{ page.category }}/">/{{page.category}}/</a> - {{
     page.date| date: site.date_format }}. <span class="bold"> Comparte: </span>
@@ -16,4 +26,3 @@ layout: default
 
     <!-- linkedin: https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Ffynardo.github.io/ -->
 </span>
-
