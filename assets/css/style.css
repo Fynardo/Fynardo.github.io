@@ -51,12 +51,56 @@ a:hover {
     width: 80%;
     display: block;
     margin: 0 auto;
+    font-style: italic;
 }
 
 @media (min-width: 1280px) {
     .post-content-image {
         width: 40%;
     }
+}
+
+.post-quote-block{
+    display: block;
+    padding: 1em 50px 1em 50px;
+    border-left: 4px solid #4464AD;
+    font-style: italic;
+    background: #EDEDED;
+    position: relative;
+}
+
+.post-quote-block p::before {
+    content: "\201C";
+    font-family: Arial;
+    font-size: 4em;
+    color: #4464AD;
+    position: absolute;
+    top: -5px;
+    left: 10px;
+}
+
+.post-code-chunk {
+    display: block;
+    padding: 10px;
+    border: 1px solid #4464AD;
+}
+
+.post-table {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.post-table td, .post-table th {
+    border: 1px solid black;
+}
+
+.post-table th {
+    padding: 5px;
+}
+
+.post-table-caption {
+    text-align: center;
+    font-style: italic;
 }
 
 .post-meta {
