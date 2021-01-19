@@ -1,10 +1,7 @@
 # Estudio probabilístico de la ruleta europea. Apuesta simple al color.
 
 # Definición de la ruleta. 18 números rojos, 18 números negros y 1 número verde (0).
-ruleta = c('V', rep(c('R','N'),18))
-colores = c('V',rep(c('R','N'),5), rep(c('N','R'),4), rep(c('R','N'),5), rep(c('N','R'),4))
-docenas = c(0, rep(1,12), rep(2,12), rep(3,12))
-
+ruleta = c(rep(c('R','N'),18), 'V')
 
 # Probabilidades teóricas
 ## Regla de LaPlace
@@ -48,15 +45,15 @@ apostar = function(n=1, c='R', prison=F){
     return(aciertos - fallos)
 }
 
-# Realizamos 2500 simulaciones de 100 tiradas cada una
-tandas = replicate(5000, apostar(100))
+# Realizamos 5000 simulaciones de sesiones de 100 tiradas
+sesiones = replicate(5000, apostar(100))
 
 dev.new()
-plot(tandas[1:250], col=ifelse(tandas < 0, 'red', 'green'), pch=16, main="Apuestas ganadoras vs perdedoras", xlab="Apuesta", ylab="Resultado")
+plot(sesiones[1:250], col=ifelse(sesiones < 0, 'red', 'green'), pch=16, main="Sesiones ganadoras vs perdedoras", xlab="Sesión", ylab="Resultado")
 grid()
 abline(h=0)
 
 
-# La esperanza simulada la calculamos como la media de todas las simulaciones
-esperanza_simulada = mean(tandas); esperanza_simulada
+# La esperanza simulada la calculamos como la media de todas las sesiones 
+esperanza_simulada = mean(sesiones); esperanza_simulada
 
