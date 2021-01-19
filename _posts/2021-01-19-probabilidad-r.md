@@ -26,10 +26,10 @@ han planteado multitud de teorías y estrategias que presumen de ser capaces de 
 pero, ¿es realmente posible conseguir tal objetivo?
 
 <figure>
-  <img src="{{ site.url }}/assets/2021-01-19/ruleta.jpg"/>
+  <img src="{{ site.url }}/assets/2021-01-19/ruleta.jpg" class="post-content-image"/>
   <figcaption>Figura 1: Ruleta Europea (fuente: <a href="https://es.wikipedia.org/wiki/Ruleta">Wikipedia</a>).</figcaption>
 </figure>
-{: .post-content-image #fig-1}
+{: .post-content-image-caption #fig-1}
 
 
 A lo largo de esta entrada estudiaremos el funcionamiento de la ruleta desde el punto de vista probabilístico e intentaremos dar respuesta a esta pregunta, comprobaremos si es viable o no ganar a largo plazo. Además, implementaremos una ruleta que nos permita realizar simulaciones de un subconjunto de jugadas y comparar los resultados con la teoría. Todo el código mostrado está disponible en el [repositorio]({{ site.url }}/assets/2021-01-19/ruleta.R).
@@ -62,6 +62,7 @@ Para decidir si alguna de estas jugadas tiene el suficiente potencial, debemos a
 Por ejemplo, la esperanza de una apuesta a color sería la siguiente:
 
 $$ P(E) \cdot G - P(F) = (18/37) \cdot 1 - 19/37 = 0.4865 - 0.5135 = -0.027 = -2.7\% $$
+{: .post-math}
 
 Donde P(E) y P(F) son las probabilidades de ganar (éxito) o perder (fracaso) la apuesta, tal y como se calcularon en la
 Tabla 1 y G la ganancia esperada de la apuesta (en este caso 1 porque la apuesta a color es 1 a 1). El resultado es
@@ -84,7 +85,7 @@ Tabla 2. Resumen de la esperanza matemática de distintas jugadas de la ruleta.
 Esta tabla nos permite extraer 2 conclusiones principales. La primera es que todas las jugadas tienen esperanza negativa, es decir, **todas harán que perdamos dinero** a la larga. La segunda es que aquello que es negativo para el jugador es positivo para la banca, esto significa que ese 2.7\% sobre lo apostado es el **margen de beneficio** que se asegura el propietario de la ruleta.
 
 > Es posible que te preguntes si existe una forma de generalizar el estudio de este tipo de experimentos, estás en lo cierto, cualquier jugada de la ruleta puede incluirse dentro de lo que se conoce como **experimentos de Bernoulli** [[3]](#ref-bernoulli). Cualquier experimento aleatorio en el que haya dos posibles resultados (normalmente denominados éxito y fracaso) entra dentro de esta categoría. Sin embargo, lo realmente interesante es estudiar la repetición de alguno de estos experimentos, que se conoce como **proceso de bernoulli**.
-{: .post-quote-block}
+{: .post-blockquote}
 
 
 ### La ruleta europea en R
@@ -154,10 +155,10 @@ apostar = function(n=1, c='R'){
 Con estas funciones lo que obtenemos es una forma sencilla de generar tiradas y otra de realizar apuestas y comprobar la ganancia obtenida.
 
 <figure>
-  <img src="{{site.url}}/assets/2021-01-19/tiradas.png"/>
+  <img src="{{site.url}}/assets/2021-01-19/tiradas.png" class="post-content-image"/>
   <figcaption>Figura 2: Resultados tras 5000 tiradas a color.</figcaption>
 </figure>
-{: .post-content-image #fig-2}
+{: .post-content-image-caption #fig-2}
 
 La Figura 2 muestra el reparto en colores obtenido tras realizar 5000 tiradas. El comportamiento es el esperado, los 
 números rojos y los negros tienen la misma probabilidad de salir, por tanto las barras son de tamaño similar. El 0 sale
@@ -174,10 +175,10 @@ head(sesiones)
 {: .post-code-chunk}
 
 <figure>
-  <img src="{{site.url}}/assets/2021-01-19/sesiones.png"/>
+  <img src="{{site.url}}/assets/2021-01-19/sesiones.png" class="post-content-image"/>
   <figcaption>Figura 3: Balance en 250 sesiones de juego.</figcaption>
 </figure>
-{: .post-content-image #fig-3}
+{: .post-content-image-caption #fig-3}
 
 
 La Figura 3 muestra parte de estas 5000 sesiones, en verde se marcan aquellas en las que hemos ganado, en rojo aquellas

@@ -48,11 +48,17 @@ a:hover {
 }
 
 .post-content-image {
-    width: 80%;
+    width: 100%;
     display: block;
     margin: 0 auto;
     font-style: italic;
 }
+
+.post-content-image-caption {
+    font-style: italic;
+    text-align:center;
+}
+
 
 @media (min-width: 1280px) {
     .post-content-image {
@@ -60,16 +66,16 @@ a:hover {
     }
 }
 
-.post-quote-block{
+.post-blockquote{
     display: block;
-    padding: 1em 50px 1em 50px;
+    padding: 1em 20px 1em 20px;
     border-left: 4px solid #4464AD;
     font-style: italic;
     background: #EDEDED;
     position: relative;
 }
 
-.post-quote-block p::before {
+.post-blockquote p::before {
     content: "\201C";
     font-family: Arial;
     font-size: 4em;
@@ -83,6 +89,11 @@ a:hover {
     display: block;
     padding: 10px;
     border: 1px solid #4464AD;
+    overflow-x: auto;
+}
+
+.post-math {
+    overflow-x: auto;
 }
 
 .post-table {
