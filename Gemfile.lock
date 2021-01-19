@@ -261,9 +261,12 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll-feed (~> 0.6)
+<<<<<<< Updated upstream
   nokogiri (>= 1.11.0.rc4)
+=======
+>>>>>>> Stashed changes
   rouge
   tzinfo-data
 
 BUNDLED WITH
-   2.1.4
+   2.2.5
