@@ -66,23 +66,11 @@ a:hover {
     }
 }
 
-.post-blockquote{
+.post-info-box{
     display: block;
     padding: 1em 20px 1em 20px;
     border-left: 4px solid #4464AD;
     font-style: italic;
-    background: #EDEDED;
-    position: relative;
-}
-
-.post-blockquote p::before {
-    content: "\201C";
-    font-family: Arial;
-    font-size: 4em;
-    color: #4464AD;
-    position: absolute;
-    top: -5px;
-    left: 10px;
 }
 
 .post-code-chunk {

@@ -84,8 +84,8 @@ Tabla 2. Resumen de la esperanza matemática de distintas jugadas de la ruleta.
 
 Esta tabla nos permite extraer 2 conclusiones principales. La primera es que todas las jugadas tienen esperanza negativa, es decir, **todas harán que perdamos dinero** a la larga. La segunda es que aquello que es negativo para el jugador es positivo para la banca, esto significa que ese 2.7\% sobre lo apostado es el **margen de beneficio** que se asegura el propietario de la ruleta.
 
-> Es posible que te preguntes si existe una forma de generalizar el estudio de este tipo de experimentos, estás en lo cierto, cualquier jugada de la ruleta puede incluirse dentro de lo que se conoce como **experimentos de Bernoulli** [[3]](#ref-bernoulli). Cualquier experimento aleatorio en el que haya dos posibles resultados (normalmente denominados éxito y fracaso) entra dentro de esta categoría. Sin embargo, lo realmente interesante es estudiar la repetición de alguno de estos experimentos, que se conoce como **proceso de bernoulli**.
-{: .post-blockquote}
+Es posible que te preguntes si existe una forma de generalizar el estudio de este tipo de experimentos, estás en lo cierto, cualquier jugada de la ruleta puede incluirse dentro de lo que se conoce como **experimentos de Bernoulli** [[3]](#ref-bernoulli). Cualquier experimento aleatorio en el que haya dos posibles resultados (normalmente denominados éxito y fracaso) entra dentro de esta categoría. Sin embargo, lo realmente interesante es estudiar la repetición de alguno de estos experimentos, que se conoce como **proceso de bernoulli**.
+{: .post-info-box}
 
 
 ### La ruleta europea en R
