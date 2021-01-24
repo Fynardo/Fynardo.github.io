@@ -7,7 +7,8 @@ tags: datos, scrapers, scrapy, scrapyd, docker
 ---
 
 
-Excerpt placeholder: Patata fritidita
+En los proyectos de minería y scraping es importante, y complejo, mantener una buena organización de todos los componentes involucrados, ya que son proyectos que tienden a crecer y evolucionar mucho y muy rápido. En esta entrada estudiaremos algunas de las claves que nos permitan mejorar la configuración y el despliegue de los scrapers, utilizando tecnologías como scrapyd y docker.
+
 <!-- excerpt-end -->
 
 ### Contenido
