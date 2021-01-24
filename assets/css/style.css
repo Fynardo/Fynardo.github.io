@@ -13,6 +13,17 @@ header h1 {
     position: relative;
 }
 
+.rss-logo {
+    vertical-align: middle;
+    width: 24px;
+    height: 24px;
+}
+
+.rss-subscribe {
+    font-weight: bold;
+    font-size: small;
+}
+
 #content {
     padding-left:5%;
     padding-right:5%;
@@ -122,7 +133,9 @@ a:hover {
 }
 
 .post-share-logo {
-    vertical-align:middle;
+    vertical-align: middle;
+    width: 32px;
+    height: 32px;
 }
 
 
