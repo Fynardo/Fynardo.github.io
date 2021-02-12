@@ -52,6 +52,8 @@ a:hover {
     display: block;
     margin: 0 auto;
     font-style: italic;
+    padding: 5px;
+    border: 1px solid black;
 }
 
 .post-content-image-caption {
@@ -70,14 +72,26 @@ a:hover {
     display: block;
     padding: 1em 20px 1em 20px;
     border-left: 4px solid #4464AD;
+    background-color: #6983BD24;
     font-style: italic;
 }
+
+.post-alert-box {
+    display: block;
+    padding: 1em 20px 1em 20px;
+    border-left: 4px solid #DDDA00;
+    background-color: #DDDA001C;
+    font-style: italic;
+
+}
+
 
 .post-code-chunk {
     display: block;
     padding: 10px;
     border: 1px solid #4464AD;
     overflow-x: auto;
+    background-color: #D9E0EE3A;
 }
 
 .post-math {
