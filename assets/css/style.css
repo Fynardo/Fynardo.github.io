@@ -4,6 +4,10 @@
 
 header img {
     float: left;
+    width: 150px;
+    height: 150px;
+    width: 100px;
+    height: 95px;
 }
 
 header h1 {
