@@ -162,14 +162,14 @@ a:hover {
     text-decoration-thickness: 2px;
 }
 
-.underscore_or {
+.underscore_data {
     text-decoration: underline;
     -webkit-text-decoration-color: orange; /* Safari */
     text-decoration-color: orange;
     text-decoration-thickness: 2px;
 }
 
-.underscore_data {
+.underscore_stat_or {
     text-decoration: underline;
     -webkit-text-decoration-color: green; /* Safari */
     text-decoration-color: green;
@@ -181,7 +181,6 @@ a:hover {
     -webkit-text-decoration-color: blue; /* Safari */
     text-decoration-color: blue;
     text-decoration-thickness: 2px;
-
 }
 
 .underscore_embed {
