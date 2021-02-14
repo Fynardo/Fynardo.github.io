@@ -2,3 +2,7 @@ _site
 .sass-cache
 .jekyll-metadata
 *.swp
+
+# Utils scripts are written in python:
+*.pyc
+*__pycache__
