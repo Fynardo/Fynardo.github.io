@@ -7,7 +7,7 @@ layout: default
 
 <span class="post-meta"> -> en <a href="{{site.url}}/category/{{ page.category }}">/{{page.category}}/</a> - {{
     page.date| date: site.date_format }} ({{page.readtime}} min.). <span class="bold"> Comparte: </span>
-    <a href="https://twitter.com/intent/tweet?text={{page.title}} via fynardo.dev" target="_blank">
+    <a href="https://twitter.com/intent/tweet?text={{page.title}} via {{site.url}}&url={{site.url}}{{page.url}}" target="_blank">
         <img class="post-share-logo" src="{{site.url}}/assets/img/twitter_logo_blue.png"></img>
     </a>
 
@@ -20,7 +20,7 @@ layout: default
 
 <span class="post-meta"> -> en <a href="{{site.url}}/category/{{ page.category }}">/{{page.category}}/</a> - {{
     page.date| date: site.date_format }}. <span class="bold"> Comparte: </span>
-    <a href="https://twitter.com/intent/tweet?text={{page.title}} via fynardo.dev" target="_blank">
+    <a href="https://twitter.com/intent/tweet?text={{page.title}} via {{site.url}}&url={{site.url}}{{page.url}}" target="_blank">
         <img class="post-share-logo" src="{{site.url}}/assets/img/twitter_logo_blue.png"></img>
     </a>
 
