@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Scrapyd&#58; Configuraci&oacute;n y despliegue
+description: Todas las claves de la configuración y el despliegue de scrapers con scrapyd.
 category: data
 readtime: 8
 tags: datos, scrapers, scrapy, scrapyd, python, docker

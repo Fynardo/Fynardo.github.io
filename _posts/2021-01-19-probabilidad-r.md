@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Estudiando juegos de azar con R&#58; La Ruleta
+description: Vamos a estudiar el funcionamiento probabilístico de la ruleta.
 date: 2021-01-19
 category: estadistica
 readtime: 7
