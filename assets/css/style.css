@@ -196,7 +196,7 @@ a:hover {
   margin-bottom: 50px;
   border: 2px solid #4464AD;
   background: #FFFFFF;
-  background: linear-gradient(90deg, #FFFFFF 0%, #D9E0EEAF 75%);
+  background: linear-gradient(90deg, #FFFFFF 0%, #D9E0EE 50%, #D9E0EEAF 75%);
   min-height: 150px;
   min-width: 400px;
 }
