@@ -194,20 +194,39 @@ a:hover {
   display: flex;
   margin-top:50px;
   margin-bottom: 50px;
-  padding: 10px;
-  border: 2px solid red;
+  border: 2px solid #4464AD;
+  background: #FFFFFF;
+  background: linear-gradient(90deg, #FFFFFF 0%, #D9E0EEAF 75%);
+  min-height: 150px;
+  min-width: 400px;
 }
 
 .project-card-img {
     float: left;
     margin-right: 25px;
-}
-
-.project-card-img img{
-    width: 150px;
-    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:10px;
 }
 
 .project-card-content {
-    float: left;
+    margin-right: 10px;
 }
+
+.project-card-links-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 10px 0px;
+}
+
+.project-card-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+
+
+
