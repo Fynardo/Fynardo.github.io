@@ -190,4 +190,24 @@ a:hover {
     text-decoration-thickness: 2px;
 }
 
+.project-card {
+  display: flex;
+  margin-top:50px;
+  margin-bottom: 50px;
+  padding: 10px;
+  border: 2px solid red;
+}
 
+.project-card-img {
+    float: left;
+    margin-right: 25px;
+}
+
+.project-card-img img{
+    width: 150px;
+    height: 150px;
+}
+
+.project-card-content {
+    float: left;
+}
