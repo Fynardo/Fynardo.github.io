@@ -212,6 +212,9 @@ a:hover {
 
 .project-card-content {
     margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .project-card-links-wrapper {
